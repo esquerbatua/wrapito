@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="63" failures="12" errors="0" time="8.514">
+  <testsuite name="toHaveBeenFetchedTimes" errors="0" failures="0" skipped="0" timestamp="2024-01-18T12:49:12" time="6.523" tests="7">
+    <testcase classname="toHaveBeenFetchedTimes should count how many times an url is called" name="toHaveBeenFetchedTimes should count how many times an url is called" time="0.02">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should match the whole url" name="toHaveBeenFetchedTimes should match the whole url" time="0.008">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should match the url without query params" name="toHaveBeenFetchedTimes should match the url without query params" time="0.003">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should match the url with query params" name="toHaveBeenFetchedTimes should match the url with query params" time="0.003">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should match the url when the default host is defined for wrapito" name="toHaveBeenFetchedTimes should match the url when the default host is defined for wrapito" time="0.003">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should match the url when the default host is defined for wrapito and in the expected path" name="toHaveBeenFetchedTimes should match the url when the default host is defined for wrapito and in the expected path" time="0.003">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedTimes should check that the path has not been called" name="toHaveBeenFetchedTimes should check that the path has not been called" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="toHaveBeenFetchedWith" errors="0" failures="0" skipped="0" timestamp="2024-01-18T12:49:12" time="6.598" tests="13">
+    <testcase classname="toHaveBeenFetchedWith should check that the path has been called" name="toHaveBeenFetchedWith should check that the path has been called" time="0.023">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith should check that the path has not been called" name="toHaveBeenFetchedWith should check that the path has not been called" time="0.008">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should check that the request has body" name="toHaveBeenFetchedWith request body should check that the request has body" time="0.006">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should check that the path has been called with the supplied body" name="toHaveBeenFetchedWith request body should check that the path has been called with the supplied body" time="0.007">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should not throw already read TypeError" name="toHaveBeenFetchedWith request body should not throw already read TypeError" time="0.005">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should differentiate between to request to the same path but with different body" name="toHaveBeenFetchedWith request body should differentiate between to request to the same path but with different body" time="0.017">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should allow to specify the body elements in different order" name="toHaveBeenFetchedWith request body should allow to specify the body elements in different order" time="0.005">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request body should check that the path has not been called with the supplied body" name="toHaveBeenFetchedWith request body should check that the path has not been called with the supplied body" time="0.005">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request method should check that the path has been called with the supplied method" name="toHaveBeenFetchedWith request method should check that the path has been called with the supplied method" time="0.005">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request method should check complex body requests" name="toHaveBeenFetchedWith request method should check complex body requests" time="0.01">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request method should differentiate between to request to the same path with different methods" name="toHaveBeenFetchedWith request method should differentiate between to request to the same path with different methods" time="0.011">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request method should check that the path has not been called with the supplied method" name="toHaveBeenFetchedWith request method should check that the path has not been called with the supplied method" time="0.003">
+    </testcase>
+    <testcase classname="toHaveBeenFetchedWith request method should allow to leave the method empty" name="toHaveBeenFetchedWith request method should allow to leave the method empty" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-01-18T12:49:12" time="6.712" tests="6">
+    <testcase classname=" should warn about the code making a request that has not being mocked" name=" should warn about the code making a request that has not being mocked" time="0.091">
+    </testcase>
+    <testcase classname=" should warn about the code making a request that has not being mocked enough times" name=" should warn about the code making a request that has not being mocked enough times" time="0.029">
+    </testcase>
+    <testcase classname="when no using withNetwork builder should warn about all the request being done by the production code" name="when no using withNetwork builder should warn about all the request being done by the production code" time="0.007">
+    </testcase>
+    <testcase classname=" should not warn if the debugRequests feature is not used" name=" should not warn if the debugRequests feature is not used" time="0.01">
+    </testcase>
+    <testcase classname=" should not warn if all the requests are being mocked" name=" should not warn if all the requests are being mocked" time="0.009">
+    </testcase>
+    <testcase classname=" should warn about not fetched requests when --debugRequests param is used" name=" should warn about not fetched requests when --debugRequests param is used" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-01-18T12:49:12" time="6.874" tests="3">
+    <testcase classname=" should extend wrapito" name=" should extend wrapito" time="0.065">
+    </testcase>
+    <testcase classname=" should be compatible with withNetwork" name=" should be compatible with withNetwork" time="0.026">
+    </testcase>
+    <testcase classname=" should be composable" name=" should be composable" time="0.02">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2024-01-18T12:49:12" time="6.972" tests="5">
+    <testcase classname=" should have props" name=" should have props" time="0.029">
+    </testcase>
+    <testcase classname=" should have an element where to place a portal defined in the config" name=" should have an element where to place a portal defined in the config" time="0.015">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  I am a portal
+Received:
+
+    at Object.toHaveTextContent (/home/ceb/git/wrapito/tests/wrap.test.js:46:25)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should have unique portals" name=" should have unique portals" time="0.021">
+    </testcase>
+    <testcase classname=" should use the default mount" name=" should use the default mount" time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;Foo&quot;
+Received: &quot;&quot;
+    at Object.toBe (/home/ceb/git/wrapito/tests/wrap.test.js:64:23)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should use a custom mount" name=" should use a custom mount" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2024-01-18T12:49:12" time="6.896" tests="13">
+    <testcase classname=" should have network by default" name=" should have network by default" time="0.106">
+    </testcase>
+    <testcase classname=" should have network with an array of requests" name=" should have network with an array of requests" time="0.018">
+    </testcase>
+    <testcase classname=" should have network without responses" name=" should have network without responses" time="0.01">
+    </testcase>
+    <testcase classname=" should resolve a request with delay after the specified time" name=" should resolve a request with delay after the specified time" time="0.015">
+    </testcase>
+    <testcase classname=" should resolve all the responses waiting for an unrelated text" name=" should resolve all the responses waiting for an unrelated text" time="0.01">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: SUCCESS. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        MyComponentWithNetwork
+      &lt;/div&gt;
+      &lt;div /&gt;
+      &lt;div /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/home/ceb/git/wrapito/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+    at /home/ceb/git/wrapito/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at /home/ceb/git/wrapito/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at getByText (/home/ceb/git/wrapito/tests/withNetwork.test.js:92:17)
+    at tryCatch (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.&lt;anonymous&gt; (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at processTimers (node:internal/timers:512:7)</failure>
+    </testcase>
+    <testcase classname=" should match a request regardless the body order" name=" should match a request regardless the body order" time="0.009">
+    </testcase>
+    <testcase classname=" should mock multiple POST responses" name=" should mock multiple POST responses" time="0.024">
+    </testcase>
+    <testcase classname=" should not ignore the query params by default" name=" should not ignore the query params by default" time="0.009">
+    </testcase>
+    <testcase classname=" should ignore the query params when is configured" name=" should ignore the query params when is configured" time="0.007">
+    </testcase>
+    <testcase classname=" should ignore the query params when is configured and the path have it" name=" should ignore the query params when is configured and the path have it" time="0.007">
+    </testcase>
+    <testcase classname=" should not ignore the query params when is specified and it is configured" name=" should not ignore the query params when is specified and it is configured" time="0.006">
+    </testcase>
+    <testcase classname=" should handle fetch deafult requests when a string is passed" name=" should handle fetch deafult requests when a string is passed" time="0.003">
+    </testcase>
+    <testcase classname=" should handle fetch requests with option when a string is passed" name=" should handle fetch requests with option when a string is passed" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2024-01-18T12:49:12" time="6.987" tests="3">
+    <testcase classname=" should render a simple app" name=" should render a simple app" time="0.104">
+      <failure>TypeError: (0 , _redux.configureStore) is not a function
+    at MyAppWithStore (/home/ceb/git/wrapito/tests/components.mock.js:168:28)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/appWithStore.test.js:8:46)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render a simple app and fire a store action" name=" should render a simple app and fire a store action" time="0.007">
+      <failure>TypeError: (0 , _redux.configureStore) is not a function
+    at MyAppWithStore (/home/ceb/git/wrapito/tests/components.mock.js:168:28)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/appWithStore.test.js:14:57)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render an app using redux middlewares" name=" should render an app using redux middlewares" time="0.014">
+      <failure>TypeError: (0 , _redux.configureStore) is not a function
+    at MyAppWithStore (/home/ceb/git/wrapito/tests/components.mock.js:168:28)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/appWithStore.test.js:24:57)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="toHaveBeenFetched" errors="0" failures="0" skipped="0" timestamp="2024-01-18T12:49:19" time="0.394" tests="6">
+    <testcase classname="toHaveBeenFetched should check that the path has been called" name="toHaveBeenFetched should check that the path has been called" time="0.006">
+    </testcase>
+    <testcase classname="toHaveBeenFetched should check that the path has not been called" name="toHaveBeenFetched should check that the path has not been called" time="0.002">
+    </testcase>
+    <testcase classname="toHaveBeenFetched should check that the path has been called without new Request" name="toHaveBeenFetched should check that the path has been called without new Request" time="0.002">
+    </testcase>
+    <testcase classname="toHaveBeenFetched should check that the path has been called with custom host" name="toHaveBeenFetched should check that the path has been called with custom host" time="0.011">
+    </testcase>
+    <testcase classname="toHaveBeenFetched should check that the path has been called with custom host without protocol" name="toHaveBeenFetched should check that the path has been called with custom host without protocol" time="0.002">
+    </testcase>
+    <testcase classname="toHaveBeenFetched should check that the path has not been called with custom host" name="toHaveBeenFetched should check that the path has not been called with custom host" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="6" skipped="0" timestamp="2024-01-18T12:49:12" time="7.201" tests="7">
+    <testcase classname=" should render an app with routing" name=" should render an app with routing" time="0.157">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/atPath.test.js:14:48)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render an app without routing with specific url" name=" should render an app without routing with specific url" time="0.025">
+    </testcase>
+    <testcase classname=" should render an app with routing given an specific path using changeRoute" name=" should render an app with routing given an specific path using changeRoute" time="0.011">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/atPath.test.js:29:70)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render an app with routing given an specific path using history" name=" should render an app with routing given an specific path using history" time="0.017">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/atPath.test.js:38:70)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should warn that history config is deprecated" name=" should warn that history config is deprecated" time="0.018">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/atPath.test.js:47:48)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render an app with a routing logic between pages" name=" should render an app with a routing logic between pages" time="0.014">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at Object.mount (/home/ceb/git/wrapito/tests/atPath.test.js:57:71)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname=" should render an app with a location state" name=" should render an app with a location state" time="0.018">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;pathname&apos;)
+    at pathname (/home/ceb/git/wrapito/node_modules/react-router/lib/components.tsx:448:5)
+    at renderWithHooks (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/home/ceb/git/wrapito/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/home/ceb/git/wrapito/node_modules/react/cjs/react.development.js:2582:11)
+    at /home/ceb/git/wrapito/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/home/ceb/git/wrapito/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at Object.getMount [as mount] (/home/ceb/git/wrapito/src/wrap.tsx:137:10)
+    at mount (/home/ceb/git/wrapito/tests/atPath.test.js:68:81)
+    at tryCatch (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.&lt;anonymous&gt; (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at /home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:7
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/home/ceb/git/wrapito/node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:12)
+    at Promise.then.completed (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/home/ceb/git/wrapito/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:126:9)
+    at run (/home/ceb/git/wrapito/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/home/ceb/git/wrapito/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/ceb/git/wrapito/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/home/ceb/git/wrapito/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -37,13 +37,13 @@ it('should have props', () => {
 })
 
 it('should have an element where to place a portal defined in the config', () => {
-  const childrenText = 'I am a portal'
-  const props = { children: childrenText }
-  configure({ portal: 'portal-root-id' })
+  const childrenText = 'I am a portal';
+  const props = { children: childrenText };
+  configure({ portal: 'portal-root-id' });
 
-  wrap(MyComponentWithPortal).withProps(props).mount()
+  wrap(MyComponentWithPortal).withProps(props).mount();
 
-  expect(document.body).toHaveTextContent(childrenText)
+  expect(document.body).toHaveTextContent(childrenText);
 })
 
 it('should have unique portals', () => {

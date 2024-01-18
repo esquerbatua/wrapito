@@ -1,13 +1,12 @@
-import { render } from 'react-dom'
-
+import { createRoot } from 'react-dom/client';
 import { Component, Config, Mount } from './models'
 
 const mount = (component: Component) => {
-  const rootNode = document.body.appendChild(document.createElement('div'))
+  const rootNode = document.body.appendChild(document.createElement('div'));
 
-  render(component, rootNode)
+  createRoot(rootNode).render(component);
 
-  return rootNode
+  return rootNode;
 }
 
 let config: Config = {
@@ -24,6 +23,6 @@ function configure(newConfig: Config) {
   }
 }
 
-const getConfig = (): Config => ({ ...config })
+const getConfig = (): Config => ({ ...config });
 
-export { configure, getConfig, Config, Mount }
+export { configure, getConfig, Config, Mount };

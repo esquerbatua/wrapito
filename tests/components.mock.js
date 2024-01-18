@@ -1,9 +1,9 @@
-import React, { Component, Fragment, useState, useEffect } from 'react'
+import { createBrowserHistory } from 'history'
+import React, { Component, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Provider, useDispatch, useSelector } from 'react-redux'
-import { Router, BrowserRouter, Switch, Route, useLocation } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
-import { createStore, applyMiddleware } from 'redux'
+import { BrowserRouter, Route, Router, Switch, useLocation } from 'react-router-dom'
+import { applyMiddleware, configureStore } from 'redux'
 import thunk from 'redux-thunk'
 
 export const MyComponent = () => <div>Foo</div>
@@ -48,7 +48,7 @@ export class MyComponentMakingHttpCalls extends Component {
   }
 
   render = () => (
-    <div data-testid="quantity" onClick={ this.saveQuantity }>
+    <div data-testid="quantity" onClick={this.saveQuantity}>
       <span>quantity: {this.state.quantity}</span>
       {this.state.isSaved && <i aria-label="quantity saved" />}
     </div>
@@ -65,7 +65,7 @@ const Home = ({ history }) => {
   return (
     <div>
       Home
-      <button onClick={ goToCategories }>Go to categories</button>
+      <button onClick={goToCategories}>Go to categories</button>
     </div>
   )
 }
@@ -79,7 +79,7 @@ const PageUsingLocationState = () => {
 
   useEffect(() => {
     if (location.state) setTitle(location.state.title)
-  },[location.state])
+  }, [location.state])
 
   return <div>{title}</div>
 }
@@ -88,19 +88,19 @@ export const history = createBrowserHistory()
 
 export const MyAppWithRouting = () => {
   return (
-    <Router history={ history }>
+    <Router history={history}>
       <Switch>
-        <Route key="home" path="/" component={ Home } exact={ true } />
+        <Route key="home" path="/" component={Home} exact={true} />
         <Route
           key="categories"
           path="/categories"
-          component={ Categories }
-          exact={ true }
+          component={Categories}
+          exact={true}
         />
-        <Route 
-          component={ PageUsingLocationState } 
-          key="page-using-location-state" 
-          path="/page-using-location-state" 
+        <Route
+          component={PageUsingLocationState}
+          key="page-using-location-state"
+          path="/page-using-location-state"
           exact={true}
         />
       </Switch>
@@ -112,12 +112,12 @@ export const MyAppWithBrowserRouting = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route key="home" path="/" component={ Home } exact={ true } />
+        <Route key="home" path="/" component={Home} exact={true} />
         <Route
           key="categories"
           path="/categories"
-          component={ Categories }
-          exact={ true }
+          component={Categories}
+          exact={true}
         />
       </Switch>
     </BrowserRouter>
@@ -134,18 +134,18 @@ const remove = () => dispatch => dispatch({ type: ACTION_TYPES.REMOVE })
 
 function reducer(state = { products: 10 }, action) {
   switch (action.type) {
-  case ACTION_TYPES.ADD:
-    return {
-      products: state.products + 1,
-    }
+    case ACTION_TYPES.ADD:
+      return {
+        products: state.products + 1,
+      }
 
-  case ACTION_TYPES.REMOVE:
-    return {
-      products: state.products - 1,
-    }
+    case ACTION_TYPES.REMOVE:
+      return {
+        products: state.products - 1,
+      }
 
-  default:
-    return state
+    default:
+      return state
   }
 }
 
@@ -156,8 +156,8 @@ const Cart = () => {
   return (
     <div>
       <p>{products}</p>
-      <button onClick={ () => dispatch(add()) }>+</button>
-      <button onClick={ () => dispatch(remove()) }>-</button>
+      <button onClick={() => dispatch(add())}>+</button>
+      <button onClick={() => dispatch(remove())}>-</button>
     </div>
   )
 }
@@ -165,7 +165,7 @@ const Cart = () => {
 export const MyAppWithStore = () => {
   return (
     <Provider
-      store={ createStore(reducer, { products: 10 }, applyMiddleware(thunk)) }
+      store={configureStore(reducer, { products: 10 }, applyMiddleware(thunk))}
     >
       <Cart />
     </Provider>
@@ -252,7 +252,7 @@ export const MyComponentWithLogin = () => {
     return (
       <div>
         <span>Logged in as {username}</span>
-        <button onClick={ logout }>Logout</button>
+        <button onClick={logout}>Logout</button>
       </div>
     )
   }
@@ -302,14 +302,14 @@ export const MyComponentWithFeedback = () => {
     })
 
     const response = await fetch(request)
-    if(!response) return
+    if (!response) return
     const { name } = await response.json()
     setFeedback(name)
   }
 
   return (
     <div>
-      <button onClick={ save }>save</button>
+      <button onClick={save}>save</button>
       <span>{feedback}</span>
     </div>
   )
